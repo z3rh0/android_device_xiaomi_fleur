@@ -36,6 +36,9 @@ persist.vendor.fingerprint.sensor_location=1080|915|145|local:462703942230018764
 # Gatekeeper
 ro.hardware.gatekeeper=beanpod
 
+# GNSS
+ro.vendor.mtk_log_hide_gps=1
+
 # Camera
 camera.disable_zsl_mode=1
 vendor.camera.mdp.dre.enable=1
