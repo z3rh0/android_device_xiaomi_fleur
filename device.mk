@@ -235,6 +235,7 @@ PRODUCT_PACKAGES += \
     WifiOverlayFleur
 
 PRODUCT_PACKAGES += \
+    LineageApertureOverlayFleur \
     LineageDialerFleur
 
 # Power-off Alarm
