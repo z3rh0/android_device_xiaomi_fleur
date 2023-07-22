@@ -68,3 +68,6 @@ on post-fs-data
 
     chmod 0660 /dev/spm
     chown system system /dev/spm
+
+on boot
+    stop console
