@@ -32,6 +32,9 @@ PRODUCT_ENABLE_UFFD_GC := true
 PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
     $(DEVICE_PATH)/configs/linker.config.json
 
+# Pagesize
+PRODUCT_NO_BIONIC_PAGE_SIZE_MACRO := true
+
 # Set support hide display cutout feature
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.support_hide_display_cutout=true
