@@ -973,6 +973,16 @@ vendor/etc/screen_light.xml
 vendor/etc/dsi_panel_k7s_38_0c_0a_video_mi.xml
 vendor/etc/dsi_panel_k7s_38_0c_0b_video_mi.xml
 
+# DRM (Widevine)
+vendor/bin/hw/android.hardware.drm@1.4-service.widevine
+vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
+vendor/lib64/mediadrm/libwvdrmengine.so
+vendor/lib64/liburee_meta_drmkeyinstall.so
+vendor/lib64/liboemcrypto.so
+vendor/lib64/libtlcWidevineModularDrm.so
+vendor/lib64/libwvhidl.so
+
 # MMS
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service
 vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc
