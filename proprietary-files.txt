@@ -151,6 +151,10 @@ vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml
 vendor/etc/audio_param/Volume_AudioParam.xml
 vendor/etc/audio_param/Volume_ParamUnitDesc.xml
 
+# Batterysecret
+vendor/bin/batterysecret
+vendor/etc/init/init.batterysecret.rc
+
 # Bluetooth (Driver)
 vendor/lib64/libbluetooth_mtk.so
 vendor/lib64/libbt-vendor.so
