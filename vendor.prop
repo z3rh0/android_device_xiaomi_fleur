@@ -33,6 +33,9 @@ persist.vendor.fingerprint.type=side
 persist.vendor.fingerprint.sensor_modules=fpc,goodix
 persist.vendor.fingerprint.sensor_location=1080|915|145|local:4627039422300187648
 
+# Gatekeeper
+ro.hardware.gatekeeper=beanpod
+
 # Camera
 camera.disable_zsl_mode=1
 vendor.camera.mdp.dre.enable=1
