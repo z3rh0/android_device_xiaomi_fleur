@@ -74,4 +74,9 @@
         <transport>hwbinder</transport>
         <fqname>@1.1::IMMAgent/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.pq</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.15::IPictureQuality/default</fqname>
+    </hal>
 </manifest>
