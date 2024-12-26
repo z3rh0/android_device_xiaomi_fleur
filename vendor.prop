@@ -108,3 +108,8 @@ ro.vendor.pq.mtk_blulight_def_support=0
 ro.vendor.mediatek.platform=MT6781
 ro.soc.model=MT6781
 ro.soc.manufacturer=Mediatek
+
+# Storage
+external_storage.casefold.enabled=1
+external_storage.projid.enabled=1
+external_storage.sdcardfs.enabled=0
