@@ -911,3 +911,6 @@ vendor/etc/camera/model/rt_ldc_model/ldc_pre_policy
 vendor/etc/camera/model/rt_model/preview_cache
 vendor/etc/camera/model/rt_model/preview_model
 vendor/etc/camera/model/rt_model/preview_policy
+
+# ConsumerIR
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.mt6781.so;FIX_SONAME
