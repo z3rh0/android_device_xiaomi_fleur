@@ -53,6 +53,12 @@ persist.vendor.camera3.pipeline.bufnum.min.high_ram.fdyuv=5
 persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=5
 ro.mtk_cam_stereo_camera_support=1
 
+# Neural Networks
+ro.vendor.mtk_nn_support=1
+ro.vendor.mtk_nn_baseline_support=1
+ro.vendor.mtk_nn.option=D,E,F,Z
+ro.vendor.mtk_nn_quant_preferred=1
+
 # Picture Quality
 ro.vendor.mtk_pq_support=2
 ro.vendor.mtk_pq_color_mode=1
