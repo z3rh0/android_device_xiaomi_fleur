@@ -133,6 +133,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
 
+# Init
+PRODUCT_PACKAGES += \
+    init.connectivity.rc \
+    init.modem.rc \
+    init.mt6781.rc \
+    init.project.rc \
+    init.sensor_1_0.rc \
+    init.recovery.mt6781.rc \
+    ueventd.mt6781.rc \
+    fstab.mt6781 \
+    fstab.mt6781.ramdisk
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore.km41.xml
