@@ -387,6 +387,24 @@
       "Value": "1002000"
     },
     {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "GPUMinFreq",
+      "Duration": 0,
+      "Value": "718000"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "GPUSchedMode",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "GPUSchedPeriod",
+      "Duration": 0,
+      "Value": "50"
+    },
+    {
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
