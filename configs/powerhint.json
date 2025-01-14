@@ -544,6 +544,18 @@
     },
     {
       "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "CPULittleClusterMaxFreq",
+      "Duration": 0,
+      "Value": "500000"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "CPUBigClusterMaxFreq",
+      "Duration": 0,
+      "Value": "774000"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
       "Node": "CPULittleClusterUpRateLimitUs",
       "Duration": 0,
       "Value": "20000"
@@ -565,6 +577,18 @@
       "Node": "CPUBigClusterDownRateLimitUs",
       "Duration": 0,
       "Value": "500"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "GPUMinFreq",
+      "Duration": 0,
+      "Value": "300000"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "GPUMaxFreq",
+      "Duration": 0,
+      "Value": "300000"
     },
     {
       "PowerHint": "DISPLAY_INACTIVE",
