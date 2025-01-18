@@ -61,7 +61,6 @@ on init
 
     # Foreground tasks
     write /dev/cpuctl/foreground/cpu.uclamp.latency_sensitive 0
-    write /dev/cpuctl/foreground/cpu.uclamp.min 10
     write /dev/cpuctl/foreground/cpu.uclamp.max max
     write /dev/cpuctl/foreground/cpu.shares 20480
 
@@ -79,7 +78,6 @@ on init
 
     # Top app tasks
     write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 0
-    write /dev/cpuctl/top-app/cpu.uclamp.min 15
     write /dev/cpuctl/top-app/cpu.uclamp.max max
     write /dev/cpuctl/top-app/cpu.shares 20480
 
