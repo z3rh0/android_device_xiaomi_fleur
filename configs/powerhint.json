@@ -422,7 +422,7 @@
       "PowerHint": "INTERACTION",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 1000,
-      "Value": "1169000"
+      "Value": "1530000"
     },
     {
       "PowerHint": "INTERACTION",
