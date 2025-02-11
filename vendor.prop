@@ -115,7 +115,8 @@ ro.vendor.pq.mtk_ultra_dimming_support=0
 ro.vendor.pq.mtk_blulight_def_support=0
 
 # HWUI
-debug.hwui.skia_atrace_enabled=false
+debug.hwui.skia_tracing_enabled=false
+debug.hwui.skia_use_perfetto_track_events=false
 
 # IMS
 persist.vendor.mtk_dynamic_ims_switch=1
