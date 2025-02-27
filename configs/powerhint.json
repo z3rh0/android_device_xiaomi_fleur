@@ -566,7 +566,7 @@
       "PowerHint": "GAME",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "910000"
+      "Value": "950000"
     },
     {
       "PowerHint": "GAME",
