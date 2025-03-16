@@ -171,7 +171,7 @@
       "Path": "/dev/cpuset/foreground/cpus",
       "Values": [
         "0-2",
-        "0-6"
+        "0-5,7"
       ],
       "ResetOnInit": true
     },
@@ -180,7 +180,7 @@
       "Path": "/dev/cpuset/foreground_window/cpus",
       "Values": [
         "0-2",
-        "0-6"
+        "0-5,7"
       ],
       "ResetOnInit": true
     },
