@@ -167,11 +167,6 @@
         <fqname>@3.0::IMtkRadioEx/mtkSmartRatSwitch2</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.mediatek.hardware.pq</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.15::IPictureQuality/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.mediatek.hardware.nvram</name>
         <transport>hwbinder</transport>
         <fqname>@1.1::INvram/default</fqname>

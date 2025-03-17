@@ -920,6 +920,7 @@ vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib64/hw/hwcomposer.mt6781.so:vendor/lib64/hw/hwcomposer.mtk_common.so;FIX_SONAME
 vendor/lib64/mt6781/libdpframework.so:vendor/lib64/libdpframework.so
 vendor/lib64/mt6781/libmtk_drvb.so:vendor/lib64/libmtk_drvb.so
+vendor/lib64/mt6781/libpq_prot.so:vendor/lib64/libpq_prot.so
 vendor/lib64/libaal_cust.so
 vendor/lib64/libaal_key.so
 vendor/lib64/libaal_mtk.so
@@ -939,6 +940,22 @@ vendor/lib64/libminiui.so
 vendor/lib64/libmml.so
 vendor/lib64/libpixelflinger.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.0.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.1.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.10.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.11.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.12.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.13.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.14.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.15.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.2.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.3.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.4.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.5.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.6.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.7.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 
 # Display (Thread Unwinding) - from gale-user 15 AP3A.240905.015.A2 OS2.0.2.0.VGPMIXM release-keys
 vendor/lib/libladder.so
@@ -1099,35 +1116,6 @@ vendor/lib64/libnvram.so
 vendor/lib64/libnvram_sec.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
-
-# Picture Quality (PQ)
-vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
-vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
-vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so
-vendor/lib64/mt6781/libpq_prot.so:vendor/lib64/libpq_prot.so
-vendor/lib64/libappgamepq.so
-vendor/lib64/libpq_cust_base.so
-vendor/lib64/libpqframework.so
-vendor/lib64/libpqparamparser.so
-vendor/lib64/libpqpconfig.so
-vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
-vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
-vendor/lib64/vendor.mediatek.hardware.pq@2.0.so
-vendor/lib64/vendor.mediatek.hardware.pq@2.1.so
-vendor/lib64/vendor.mediatek.hardware.pq@2.10.so
-vendor/lib64/vendor.mediatek.hardware.pq@2.11.so
-vendor/lib64/vendor.mediatek.hardware.pq@2.12.so
-vendor/lib64/vendor.mediatek.hardware.pq@2.13.so
-vendor/lib64/vendor.mediatek.hardware.pq@2.14.so
-vendor/lib64/vendor.mediatek.hardware.pq@2.15.so
-vendor/lib64/vendor.mediatek.hardware.pq@2.2.so
-vendor/lib64/vendor.mediatek.hardware.pq@2.3.so
-vendor/lib64/vendor.mediatek.hardware.pq@2.4.so
-vendor/lib64/vendor.mediatek.hardware.pq@2.5.so
-vendor/lib64/vendor.mediatek.hardware.pq@2.6.so
-vendor/lib64/vendor.mediatek.hardware.pq@2.7.so
-vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
-vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 
 # Power
 vendor/lib64/vendor.mediatek.hardware.power@1.1.so

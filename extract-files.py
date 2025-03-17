@@ -69,9 +69,6 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/camera/camerabooster.json': blob_fixup()
         .regex_replace('"sea"', '"fleur"'),
 
-    'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so': blob_fixup()
-        .replace_needed('libutils.so', 'libutils-v32.so'),
-
     ('vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so', 'vendor/lib64/libmtkcam_stdutils.so'): blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so'),
 
