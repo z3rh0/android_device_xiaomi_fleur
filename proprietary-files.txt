@@ -921,10 +921,6 @@ vendor/lib64/hw/hwcomposer.mt6781.so:vendor/lib64/hw/hwcomposer.mtk_common.so;FI
 vendor/lib64/mt6781/libdpframework.so:vendor/lib64/libdpframework.so
 vendor/lib64/mt6781/libmtk_drvb.so:vendor/lib64/libmtk_drvb.so
 vendor/lib64/mt6781/libpq_prot.so:vendor/lib64/libpq_prot.so
-vendor/lib64/libaal_cust.so
-vendor/lib64/libaal_key.so
-vendor/lib64/libaal_mtk.so
-vendor/lib64/libaalservice.so
 vendor/lib64/libcomposer_ext.so
 vendor/lib64/libdip_drv.so
 vendor/lib64/libdip_imem.so
