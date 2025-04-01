@@ -543,25 +543,25 @@
       "PowerHint": "GAME",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
-      "Value": "9999999"
+      "Value": "1618000"
     },
     {
       "PowerHint": "GAME",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 0,
-      "Value": "9999999"
+      "Value": "1530000"
     },
     {
       "PowerHint": "GAME",
       "Node": "CPULittleClusterDownRateLimitUs",
       "Duration": 0,
-      "Value": "20000"
+      "Value": "10000"
     },
     {
       "PowerHint": "GAME",
       "Node": "CPUBigClusterDownRateLimitUs",
       "Duration": 0,
-      "Value": "20000"
+      "Value": "10000"
     },
     {
       "PowerHint": "GAME",
@@ -597,13 +597,7 @@
       "PowerHint": "GAME",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "950000"
-    },
-    {
-      "PowerHint": "GAME",
-      "Node": "FGUclampMin",
-      "Duration": 0,
-      "Value": "10"
+      "Value": "703000"
     },
     {
       "PowerHint": "GAME",
