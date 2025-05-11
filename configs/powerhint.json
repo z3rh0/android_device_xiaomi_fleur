@@ -466,13 +466,13 @@
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 1000,
-      "Value": "1275000"
+      "Value": "1500000"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 1000,
-      "Value": "1169000"
+      "Value": "1419000"
     },
     {
       "PowerHint": "INTERACTION",
@@ -496,7 +496,7 @@
       "PowerHint": "INTERACTION",
       "Node": "CPUBigClusterUpRateLimitUs",
       "Duration": 1000,
-      "Value": "1000"
+      "Value": "500"
     },
     {
       "PowerHint": "INTERACTION",
