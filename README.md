@@ -3,6 +3,8 @@
 # Bugs
 - IMS
 - Magnetometer
+- Memory Leak
+- GEO tagging not working
 
 ```
 #
