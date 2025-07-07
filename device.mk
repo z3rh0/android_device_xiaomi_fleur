@@ -329,7 +329,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek/libmtkperf_client \
     hardware/xiaomi \
     hardware/google/pixel \
-    hardware/google/interfaces
+    hardware/google/interfaces \
+    vendor/myapps
 
 # USB
 PRODUCT_PACKAGES += \
@@ -357,3 +358,17 @@ PRODUCT_COPY_FILES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/fleur/fleur-vendor.mk)
+
+# --- Custom F-Droid Apps ---
+# Add your custom F-Droid apps here
+PRODUCT_PACKAGES += \
+    AdAway \
+    AFWall \
+    AuroraStore
+
+# Additional preinstalled packages XML file for Fleur device
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/preinstalled-packages-fleur.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/preinstalled-packages-fleur.xml \
+    $(LOCAL_PATH)/privapp-permissions-fleur.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-fleur.xml
+
+PRODUCT_PROPERTY_OVERRIDES += ro.control_privapp_permissions=log
