@@ -179,3 +179,5 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
 # Inherit the proprietary files
 include vendor/xiaomi/fleur/BoardConfigVendor.mk
+
+BUILD_BROKEN_DUP_RULES := true
