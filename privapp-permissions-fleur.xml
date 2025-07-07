@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions xmlns:android="http://schemas.android.com/apk/res/android">
+    <privapp-permissions package="org.adaway">
+        <permission name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+        <permission name="android.permission.QUERY_ALL_PACKAGES"/>
+        <permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="dev.ukanth.ufirewall">
+        <permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+        <permission name="android.permission.POST_NOTIFICATIONS"/>
+        <permission name="android.permission.QUERY_ALL_PACKAGES"/>
+        <permission name="android.permission.USE_BIOMETRIC"/>
+        <permission name="android.permission.USE_FINGERPRINT"/>
+        <permission name="android.permission.FOREGROUND_SERVICE"/>
+        <permission name="android.permission.BLUETOOTH"/>
+        <permission name="android.permission.BLUETOOTH_ADMIN"/>
+        <permission name="android.permission.BLUETOOTH_CONNECT"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.aurora.store">
+        <permission name="android.permission.FOREGROUND_SERVICE"/>
+        <permission name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+        <permission name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+        <permission name="android.permission.QUERY_ALL_PACKAGES"/>
+        <permission name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+        <permission name="android.permission.REQUEST_DELETE_PACKAGES"/>
+        <permission name="android.permission.USE_CREDENTIALS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="org.fdroid.fdroid">
+        <permission name="android.permission.FOREGROUND_SERVICE"/>
+        <permission name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+        <permission name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+        <permission name="android.permission.QUERY_ALL_PACKAGES"/>
+        <permission name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+        <permission name="android.permission.REQUEST_DELETE_PACKAGES"/>
+        <permission name="android.permission.USE_CREDENTIALS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.topjohnwu.magisk">
+        <permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+        <permission name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+        <permission name="android.permission.BACKGROUND_SERVICE"/>
+    </privapp-permissions>
+</permissions>

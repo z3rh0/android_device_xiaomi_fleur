@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<allowed-packages>
+    <install-in-user-type package="org.adaway">
+        <install-in user-type="SYSTEM" />
+        <install-in user-type="FULL" />
+        <install-in user-type="PROFILE" />
+    </install-in-user-type>
+
+    <install-in-user-type package="dev.ukanth.ufirewall">
+        <install-in user-type="SYSTEM" />
+        <install-in user-type="FULL" />
+        <install-in user-type="PROFILE" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.aurora.store">
+        <install-in user-type="SYSTEM" />
+        <install-in user-type="FULL" />
+        <install-in user-type="PROFILE" />
+    </install-in-user-type>
+
+</allowed-packages>
