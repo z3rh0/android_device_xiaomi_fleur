@@ -359,6 +359,19 @@ PRODUCT_COPY_FILES += \
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/fleur/fleur-vendor.mk)
 
+# Memory Optimization
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lmk.low=1001 \
+    ro.lmk.medium=800 \
+    ro.lmk.critical=0 \
+    ro.lmk.kill_heaviest_task=true \
+    ro.lmk.use_psi=true \
+    ro.lmk.use_minfree_levels=true \
+    ro.lmk.swap_util_max=80 \
+    ro.lmk.thrashing_limit=50 \
+    ro.lmk.psi_partial_stall_ms=70 \
+    ro.lmk.psi_complete_stall_ms=700
+
 # --- Custom F-Droid Apps ---
 # Add your custom F-Droid apps here
 PRODUCT_PACKAGES += \
