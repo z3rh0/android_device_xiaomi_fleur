@@ -370,7 +370,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.swap_util_max=80 \
     ro.lmk.thrashing_limit=50 \
     ro.lmk.psi_partial_stall_ms=70 \
-    ro.lmk.psi_complete_stall_ms=700
+    ro.lmk.psi_complete_stall_ms=700 \
+    ro.lmk.filecache_min_kb=20480
 
 # --- Custom F-Droid Apps ---
 # Add your custom F-Droid apps here
