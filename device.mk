@@ -375,6 +375,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.downgrade_pressure=80 \
     ro.lmk.kill_timeout_ms=100
 
+# Drop Cache Script
+PRODUCT_COPY_FILES += \
+    device/xiaomi/fleur/scripts/drop_caches_loop.sh:system/bin/drop_caches_loop.sh
+
 # --- Custom F-Droid Apps ---
 # Add your custom F-Droid apps here
 PRODUCT_PACKAGES += \
