@@ -371,7 +371,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.thrashing_limit=50 \
     ro.lmk.psi_partial_stall_ms=70 \
     ro.lmk.psi_complete_stall_ms=700 \
-    ro.lmk.filecache_min_kb=20480
+    #vendor.prop settings
+    ro.lmk.filecache_min_kb=20480 \
+    ro.lmk.downgrade_pressure=80 \
+    ro.lmk.kill_timeout_ms=100
 
 # --- Custom F-Droid Apps ---
 # Add your custom F-Droid apps here
