@@ -359,7 +359,7 @@ PRODUCT_COPY_FILES += \
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/fleur/fleur-vendor.mk)
 
-# Memory Optimization
+# Memory Optimization alternatively: vendor.prop
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.low=1001 \
     ro.lmk.medium=800 \
@@ -371,7 +371,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.thrashing_limit=50 \
     ro.lmk.psi_partial_stall_ms=70 \
     ro.lmk.psi_complete_stall_ms=700 \
-    #vendor.prop settings
     ro.lmk.filecache_min_kb=20480 \
     ro.lmk.downgrade_pressure=80 \
     ro.lmk.kill_timeout_ms=100
