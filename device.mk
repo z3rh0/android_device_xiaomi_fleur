@@ -373,10 +373,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.psi_complete_stall_ms=700 \
     ro.lmk.filecache_min_kb=20480
 
-# Drop Cache Script
-PRODUCT_COPY_FILES += \
-    device/xiaomi/fleur/scripts/drop_caches_loop.sh:system/bin/drop_caches_loop.sh
-
 # --- Custom F-Droid Apps ---
 # Add your custom F-Droid apps here
 PRODUCT_PACKAGES += \
