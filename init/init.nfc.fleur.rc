@@ -4,7 +4,7 @@ on post-fs && property:ro.boot.product.hardware.sku=fleur
 on post-fs && property:ro.boot.product.hardware.sku=fleurp
     enable st_nfc_hal
 
-service st_nfc_hal /vendor/bin/hw/android.hardware.nfc-service.st
+service st_nfc_hal /apex/com.google.android.hardware.nfc.st/bin/hw/android.hardware.nfc-service.st
     class hal
     user nfc
     group nfc
