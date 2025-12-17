@@ -967,13 +967,13 @@ vendor/lib64/liboemcrypto.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
 
-# Fingerprint
-vendor/lib64/hw/fingerprint.fpc.default.so
-vendor/lib64/hw/fingerprint.goodix.default.so;FIX_SONAME
-vendor/lib64/libgf_ca.so
-vendor/lib64/libgf_hal.so
-vendor/lib64/libgoodixhwfingerprint.so
-vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
+# Fingerprint - from sea V816.0.16.0.UHZMIXM
+vendor/lib64/hw/fingerprint.fpc.default.so|f2ec4fc224ee84840e8e6191f8d6a2804aa8a3f0
+vendor/lib64/hw/fingerprint.goodix.default.so;FIX_SONAME|5d5ee1f37ed1e2adbf9f0aff8227a25ca58b06a1|09b479826e955e3475437a8a80583bdba6c52cb9
+vendor/lib64/libgf_ca.so|0e4d5c3db43a9e08b2b583b476cc981e6698c66e
+vendor/lib64/libgf_hal.so|608337927e44365de2b3f9b396b4da1e87f5ee84
+vendor/lib64/libgoodixhwfingerprint.so|4261fa2e288df67a772800393cb209ad8152772a
+vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so|af7a1dbc564e1463543ae95365307f9fb6dc91b2|fe267ac7d3c61006d03e1baef92b0934e91b3441
 
 # Fuelgauge
 vendor/bin/fuelgauged
