@@ -199,3 +199,21 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
 # Inherit the proprietary files
 include vendor/xiaomi/fleur/BoardConfigVendor.mk
+
+# Force the build system to treat this as a full-source build with API surfaces
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+
+# Ensure the system-server and framework flags have a defined surface
+TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
+
+BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_STUBS_CHECKS := true
+
+# Remove the read-only variable assignment first
+BOARD_SHIPPING_API_LEVEL := 30
+BOARD_VNDK_VERSION := current
+
+# This flag forces Soong to generate the full system-modules even if "minimal"
+SOONG_CONFIG_NAMESPACES += android_hardware_overlays
+SOONG_CONFIG_android_hardware_overlays += exported_system_modules
+SOONG_CONFIG_android_hardware_overlays_exported_system_modules := true
