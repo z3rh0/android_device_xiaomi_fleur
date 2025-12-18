@@ -362,16 +362,16 @@ PRODUCT_COPY_FILES += \
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/fleur/fleur-vendor.mk)
 
-BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+#LOS23 Updates
+WITHOUT_CHECK_API := true
 
-TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
+PRODUCT_SOONG_NAMESPACES += vendor/xiaomi/fleur
 
-BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
-BUILD_BROKEN_STUBS_CHECKS := true
+# Force the use of prebuilt Mainline modules for the problematic ones
+PRODUCT_PACKAGES += \
+    com.google.android.permission \
+    com.google.android.nfcservices
 
-BOARD_SHIPPING_API_LEVEL := 30
-BOARD_VNDK_VERSION := current
-
-SOONG_CONFIG_NAMESPACES += android_hardware_overlays
-SOONG_CONFIG_android_hardware_overlays += exported_system_modules
-SOONG_CONFIG_android_hardware_overlays_exported_system_modules := true
+# Ensure the build system doesn't try to override them with source
+PRODUCT_MODULE_RELEASABLE_APEX_com.android.permission := com.google.android.permission
+PRODUCT_MODULE_RELEASABLE_APEX_com.android.nfcservices := com.google.android.nfcservices
