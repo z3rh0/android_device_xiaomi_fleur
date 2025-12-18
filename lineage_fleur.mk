@@ -3,15 +3,27 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
+# Inherit Handheld traits first (This is the "Key" to the System API)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_product.mk)
+
+# Base architecture
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+
+# Mainline and Telephony
+$(call inherit-product, $(SRC_TARGET_DIR)/product/mainline_system.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from device makefile.
-$(call inherit-product, device/xiaomi/fleur/device.mk)
+# Device and Vendor trees
+#$(call inherit-product, device/xiaomi/fleur/device.mk)
+#$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit from those products. Most specific first.
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit from device makefile.
+#$(call inherit-product, device/xiaomi/fleur/device.mk)
 
 PRODUCT_NAME := lineage_fleur
 PRODUCT_DEVICE := fleur
