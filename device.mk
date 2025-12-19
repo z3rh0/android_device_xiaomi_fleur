@@ -57,7 +57,9 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client \
-    hardware/xiaomi
+    hardware/xiaomi \
+    hardware/lineage/interfaces \
+    vendor/xiaomi/fleur
 
 # VINTF
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
@@ -364,13 +366,7 @@ $(call inherit-product, vendor/xiaomi/fleur/fleur-vendor.mk)
 #LOS23 Updates
 WITHOUT_CHECK_API := true
 
-PRODUCT_SOONG_NAMESPACES += vendor/xiaomi/fleur
+PRODUCT_APEX_SYSTEM_SERVER_JARS += com.android.crashrecovery:service-crashrecovery
 
-# Force the use of prebuilt Mainline modules for the problematic ones
-PRODUCT_PACKAGES += \
-    com.google.android.permission \
-    com.google.android.nfcservices
-
-# Ensure the build system doesn't try to override them with source
-PRODUCT_MODULE_RELEASABLE_APEX_com.android.permission := com.google.android.permission
-PRODUCT_MODULE_RELEASABLE_APEX_com.android.nfcservices := com.google.android.nfcservices
+# Clear the header path to let the system use modern A16 headers
+TARGET_SPECIFIC_HEADER_PATH :=
