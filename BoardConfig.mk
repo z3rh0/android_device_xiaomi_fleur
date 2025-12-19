@@ -200,6 +200,13 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 # Inherit the proprietary files
 include vendor/xiaomi/fleur/BoardConfigVendor.mk
 
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_NINJA_USES_ENV_VARS := true
+BUILD_BROKEN_PREBUILT_ELF_FILES := true
+TARGET_SPECIFIC_HEADER_PATH := device/xiaomi/fleur/include
+APEX_STRICT_CHECK := false
+BUILD_BROKEN_USES_STRICT_RESOLVE_TIMEOUT := true
+
 # Force the build system to treat this as a full-source build with API surfaces
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 
@@ -210,10 +217,33 @@ BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_STUBS_CHECKS := true
 
 # Remove the read-only variable assignment first
-BOARD_SHIPPING_API_LEVEL := 30
+BOARD_SHIPPING_API_LEVEL := 35
 BOARD_VNDK_VERSION := current
 
 # This flag forces Soong to generate the full system-modules even if "minimal"
 SOONG_CONFIG_NAMESPACES += android_hardware_overlays
 SOONG_CONFIG_android_hardware_overlays += exported_system_modules
 SOONG_CONFIG_android_hardware_overlays_exported_system_modules := true
+BUILD_BROKEN_STUBS_COMPILATION := true
+
+# Avoid aconfig validation which often triggers these symbol lookups
+# during the early stages of the build
+OVERRIDE_RS_DRIVER := libRSDriver.so
+
+# Force aconfig to use the platform surface instead of the restricted APEX surface
+ACONFIG_COMPILATION_MODE := platform
+
+ACONFIG_SKIP_EXPORT_JAVA_GENERATION := true
+
+# Disable the building of compressed APEX and flat APEX variants
+# This forces the build to use the platform classpath for everything.
+TARGET_FLATTEN_APEX := true
+
+# Stop the build from trying to enforce Mainline/APEX isolation
+# This allows 'Binder' to be visible everywhere.
+OVERRIDE_TARGET_FLATTEN_APEX := true
+
+java_sdk_library_import_strategy := prefer-stubs
+$(call soong_config_set,aconfig,exported_java_features,true)
+
+DEXPREOPT_GENERATE_APEX_IMAGE := false
