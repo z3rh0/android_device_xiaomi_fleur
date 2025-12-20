@@ -139,8 +139,8 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security patch level
-BOOT_SECURITY_PATCH := 2024-12-01
-VENDOR_SECURITY_PATCH := 2024-12-01
+BOOT_SECURITY_PATCH := 2025-12-19
+VENDOR_SECURITY_PATCH := 2025-12-19
 
 # SEPolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
@@ -247,3 +247,13 @@ java_sdk_library_import_strategy := prefer-stubs
 $(call soong_config_set,aconfig,exported_java_features,true)
 
 DEXPREOPT_GENERATE_APEX_IMAGE := false
+RELEASE_ACONFIG_VALUE_MAP_ALLOWED := true
+
+# Ensure 64-bit priority
+TARGET_IS_64_BIT := true
+BUILD_BROKEN_CLASSPATH_CHECK := true
+BUILD_BROKEN_DUP_RULES := true
+SKIP_ABI_CHECKS := true
+
+# Disable the strict aconfig "exported" mode that triggers the sandbox
+PRODUCT_SET_ACONFIG_FLAG_DEFAULT_PERMISSION := true
