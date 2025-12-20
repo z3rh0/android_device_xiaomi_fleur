@@ -978,6 +978,11 @@ vendor/lib64/libgf_hal.so|608337927e44365de2b3f9b396b4da1e87f5ee84
 vendor/lib64/libgoodixhwfingerprint.so|4261fa2e288df67a772800393cb209ad8152772a
 vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so|af7a1dbc564e1463543ae95365307f9fb6dc91b2|fe267ac7d3c61006d03e1baef92b0934e91b3441
 
+# FM Radio - from sea OS2.0.4.0.VHZMIXM
+vendor/firmware/fm_cust.cfg|875f3f03a0c2edd05b059c9ab3b9779ff38de6ef
+vendor/firmware/mt6631_fm_v1_coeff.bin|6d8504d6932329c7216c8c016fa7351d084a4d33
+vendor/firmware/mt6631_fm_v1_patch.bin|89c569e38fa50ca09edc13e02ace3efbd1eaa178
+
 # Fuelgauge
 vendor/bin/fuelgauged
 vendor/bin/fuelgauged_nvram
